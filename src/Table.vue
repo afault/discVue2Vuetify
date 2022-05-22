@@ -13,7 +13,7 @@
         <v-menu bottom offset-y="true">
           <template v-slot:activator="{ on, attrs }">
             <v-btn depressed v-bind="attrs" v-on="on">
-              Area
+              Status
               <div class="mx-10"></div>
               <v-icon>mdi-chevron-down</v-icon></v-btn
             >
