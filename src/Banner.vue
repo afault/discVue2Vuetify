@@ -1,5 +1,5 @@
 <template>
-  <v-banner two-line app outline elevation="20">
+  <v-banner two-line app outline elevation="10" sticky="sticky">
     <div class="col-md-12">
       <h2>Directory</h2>
     </div>

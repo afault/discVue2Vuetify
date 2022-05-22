@@ -7,7 +7,7 @@
     <div class="mx-3"></div>
     <v-btn depressed> Dashboard </v-btn>
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="offset">
+    <v-menu bottom offset-y="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn depressed v-bind="attrs" v-on="on"> Services </v-btn>
       </template>
@@ -23,7 +23,7 @@
       </v-list>
     </v-menu>
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="offset">
+    <v-menu bottom offset-y="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn depressed v-bind="attrs" v-on="on"> Directory </v-btn>
       </template>
@@ -39,7 +39,7 @@
       </v-list>
     </v-menu>
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="offset">
+    <v-menu bottom offset-y="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn depressed v-bind="attrs" v-on="on"> Report </v-btn>
       </template>
@@ -61,7 +61,7 @@
     </v-badge>
 
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="offset">
+    <v-menu bottom offset-y="true">
       <template v-slot:activator="{ on, attrs }">
         <v-btn depressed v-bind="attrs" v-on="on">
           <v-icon large>mdi-account</v-icon>
@@ -87,15 +87,7 @@ import Vue from "vue";
 export default Vue.extend({
   name: "HeaderVue",
 
-  data: () => ({
-    //
-  }),
-});
-</script>
-
-<script>
-export default {
-  data: () => ({
+ data: () => ({
     serviceItems: [
       { title: "eTicket" },
       { title: "Bantuan Segera" },
@@ -118,5 +110,5 @@ export default {
       { title: "Logout" },
     ],
   }),
-};
+});
 </script>
