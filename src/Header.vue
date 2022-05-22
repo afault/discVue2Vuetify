@@ -1,15 +1,18 @@
-<template>
-  <v-app-bar dense app>
-    <div class="mx-1"></div>
-    <div class="d-flex align-center">
-      <v-btn depressed> <v-app-bar-title>D I S C</v-app-bar-title></v-btn>
+<template >
+
+  <v-app-bar dense app >
+<meta name="viewport" content="width=1024">
+
+    <div class="mx-1" ></div>
+    <div class="d-flex align-center" >
+      <v-btn depressed> <v-app-bar-title style="color:#024C80; font-family:'Poppins; font-size: 35.8208px;"  >D I S C</v-app-bar-title></v-btn>
     </div>
     <div class="mx-3"></div>
-    <v-btn depressed> Dashboard </v-btn>
+    <v-btn depressed Montserrat  style="font-family: Montserrat;"> Dashboard </v-btn>
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="true">
+    <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn depressed v-bind="attrs" v-on="on"> Services </v-btn>
+        <v-btn depressed v-bind="attrs" v-on="on"  style="font-family: Montserrat;"> Services </v-btn>
       </template>
 
       <v-list>
@@ -23,9 +26,9 @@
       </v-list>
     </v-menu>
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="true">
+    <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn depressed v-bind="attrs" v-on="on"> Directory </v-btn>
+        <v-btn depressed v-bind="attrs" v-on="on"  style="font-family: Montserrat;"> Directory </v-btn>
       </template>
 
       <v-list>
@@ -39,9 +42,9 @@
       </v-list>
     </v-menu>
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="true">
+    <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn depressed v-bind="attrs" v-on="on"> Report </v-btn>
+        <v-btn depressed v-bind="attrs" v-on="on" style="font-family: Montserrat;"> Report </v-btn>
       </template>
 
       <v-list>
@@ -61,7 +64,7 @@
     </v-badge>
 
     <div class="mx-3"></div>
-    <v-menu bottom offset-y="true">
+    <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
         <v-btn depressed v-bind="attrs" v-on="on">
           <v-icon large>mdi-account</v-icon>
@@ -81,13 +84,19 @@
   </v-app-bar>
 </template>
 
+
+<style>
+  @import 'https://pagecdn.io/lib/easyfonts/fonts.css';
+</style>
+
+
 <script lang="ts">
 import Vue from "vue";
 
 export default Vue.extend({
   name: "HeaderVue",
 
- data: () => ({
+  data: () => ({
     serviceItems: [
       { title: "eTicket" },
       { title: "Bantuan Segera" },
@@ -112,3 +121,5 @@ export default Vue.extend({
   }),
 });
 </script>
+
+
