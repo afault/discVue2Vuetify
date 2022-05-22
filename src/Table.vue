@@ -1,10 +1,12 @@
 <template>
+<div class="lg-12">
+  
   <v-card>
     <v-card-title>
       <v-btn depressed color="primary">
         <v-icon>mdi-plus-box</v-icon>
         <div class="mx-1"></div>
-        Nutrition
+        New
       </v-btn>
       <v-spacer></v-spacer>
       <div>
@@ -46,6 +48,7 @@
       :search="search"
     ></v-data-table>
   </v-card>
+</div>
 </template>
 
 <script lang="ts">
@@ -70,8 +73,8 @@ export default Vue.extend({
         { text: "Iron (%)", value: "iron" },
       ],
       areaItems: [
-        { title: "N25 - Pulau Tikus" },
-        { title: "N30 - Sungai Pinang" },
+        { title: "Active" },
+        { title: "Inactive" },
       ],
       desserts: [
         {

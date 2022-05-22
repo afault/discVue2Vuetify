@@ -20,7 +20,6 @@ margin-top:-20px;"
     </div>
     </div>
     <div class="col-md-12" style="margin-left:45%; margin-top:-82px; ">
- 
     <v-col style="font-family:Montserrat!important; font-style: normal;font-weight: 700;" >
         <template>
           <v-btn text color="white" > Application </v-btn>
