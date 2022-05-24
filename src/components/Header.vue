@@ -1,18 +1,35 @@
 <template >
+  <v-app-bar dense app>
+    <meta name="viewport" content="width=1024" />
 
-  <v-app-bar dense app >
-<meta name="viewport" content="width=1024">
-
-    <div class="mx-1" ></div>
-    <div class="d-flex align-center" >
-      <v-btn depressed> <v-app-bar-title style="color:#024C80; font-family:'Poppins; font-size: 35.8208px;"  >D I S C</v-app-bar-title></v-btn>
+    <div class="mx-1"></div>
+    <div class="d-flex align-center">
+      <router-link :to="{ path: '/MainDashboard' }" style="text-decoration:none;">
+        <v-btn depressed>
+          <v-app-bar-title
+            style="color:#024C80; font-family:'Poppins; font-size: 35.8208px;"
+            >D I S C</v-app-bar-title
+          ></v-btn
+        ></router-link
+      >
     </div>
     <div class="mx-3"></div>
-    <v-btn depressed Montserrat  style="font-family: Montserrat;"> Dashboard </v-btn>
+    <router-link :to="{ path: '/MainDashboard' }" style="text-decoration:none;">
+      <v-btn depressed Montserrat style="font-family: Montserrat">
+        Dashboard
+      </v-btn></router-link
+    >
     <div class="mx-3"></div>
     <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn depressed v-bind="attrs" v-on="on"  style="font-family: Montserrat;"> Services </v-btn>
+        <v-btn
+          depressed
+          v-bind="attrs"
+          v-on="on"
+          style="font-family: Montserrat"
+        >
+          Services
+        </v-btn>
       </template>
 
       <v-list>
@@ -28,7 +45,14 @@
     <div class="mx-3"></div>
     <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn depressed v-bind="attrs" v-on="on"  style="font-family: Montserrat;"> Directory </v-btn>
+        <v-btn
+          depressed
+          v-bind="attrs"
+          v-on="on"
+          style="font-family: Montserrat"
+        >
+          Directory
+        </v-btn>
       </template>
 
       <v-list>
@@ -44,7 +68,14 @@
     <div class="mx-3"></div>
     <v-menu bottom offset-y="offset">
       <template v-slot:activator="{ on, attrs }">
-        <v-btn depressed v-bind="attrs" v-on="on" style="font-family: Montserrat;"> Report </v-btn>
+        <v-btn
+          depressed
+          v-bind="attrs"
+          v-on="on"
+          style="font-family: Montserrat"
+        >
+          Report
+        </v-btn>
       </template>
 
       <v-list>
@@ -74,7 +105,9 @@
       <v-list>
         <v-list-item
           v-for="(accountItem, index) in accountItems"
-          :key="index" router :to="accountItem.route"
+          :key="index"
+          router
+          :to="accountItem.route"
           link
         >
           <v-list-item-title>{{ accountItem.title }}</v-list-item-title>
@@ -86,7 +119,7 @@
 
 
 <style>
-  @import 'https://pagecdn.io/lib/easyfonts/fonts.css';
+@import "https://pagecdn.io/lib/easyfonts/fonts.css";
 </style>
 
 
@@ -114,9 +147,9 @@ export default Vue.extend({
       { title: "Event Attendance List" },
     ],
     accountItems: [
-      { title: "My KADUN", route:"/KadunOfficerView" },
-      { title: "My Account", route:"" },
-      { title: "Logout", route:"/" },
+      { title: "My KADUN", route: "/KadunOfficerView" },
+      { title: "My Account", route: "" },
+      { title: "Logout", route: "/" },
     ],
   }),
 });

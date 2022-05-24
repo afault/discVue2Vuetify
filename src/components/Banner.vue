@@ -42,7 +42,12 @@
           <v-btn text color="white"> Application </v-btn>
           <v-btn text color="white"> Bantuan Segera</v-btn>
           <v-btn text color="white"> Event</v-btn>
-          <v-btn text color="white">Officer</v-btn>
+          <router-link
+            :to="{ path: '/KadunOfficerView' }"
+            style="text-decoration: none"
+          >
+            <v-btn text color="white">Officer</v-btn></router-link
+          >
         </template>
       </v-col>
     </div>
