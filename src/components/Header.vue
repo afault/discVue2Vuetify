@@ -74,7 +74,7 @@
       <v-list>
         <v-list-item
           v-for="(accountItem, index) in accountItems"
-          :key="index"
+          :key="index" router :to="accountItem.route"
           link
         >
           <v-list-item-title>{{ accountItem.title }}</v-list-item-title>
@@ -114,9 +114,9 @@ export default Vue.extend({
       { title: "Event Attendance List" },
     ],
     accountItems: [
-      { title: "My KADUN" },
-      { title: "My Account" },
-      { title: "Logout" },
+      { title: "My KADUN", route:"/KadunOfficerView" },
+      { title: "My Account", route:"" },
+      { title: "Logout", route:"/" },
     ],
   }),
 });

@@ -1,0 +1,270 @@
+
+.kadun_login_page {
+    position: relative;
+
+    background: #FFFFFF;
+}
+
+.frame {
+position: absolute;
+width: 624px;
+height: 353px;
+left: 55px;
+top: 126px;
+}
+
+.vector{
+/* Vector */
+position: absolute;
+height: 382px;
+left: 0%;
+right: 35.43%;
+top: 254px;
+
+}
+.group_114 {
+    position: absolute;
+    width: 179px;
+    height: 81.92px;
+    left: 855px;
+    top: 84px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 69.8636px;
+    line-height: 105px;
+    text-align: center;
+    /* Primary/ Blue 900 */
+    color: #024C80;
+    }
+
+
+    
+.emailSection {
+    /* Email section */
+position: absolute;
+width: 348px;
+height: 51px;
+left: 870px;
+top: 213px;
+border-radius: 5px;
+}
+
+
+#loginTextStatic p {
+    position: absolute;
+    left: 4.89%;
+    right: 52.87%;
+    top: 15.69%;
+    bottom: 56.86%;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    color: #C4C4C4;
+    
+    }
+    
+    .loginRectangle{
+    box-sizing: border-box;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: -7.84%;
+    background: #FFFFFF;
+    border: 2px solid #D0D0D0;
+    border-radius: 5px;
+    }
+
+        
+.loginRectangle2{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 348px;
+    height: 55px;
+    left: 870px;
+    top: 275px;
+    
+    background: #FFFFFF;
+    /* Disable */
+    
+    border: 2px solid #D0D0D0;
+    border-radius: 5px;
+        }
+
+.forgotPassword{
+position: absolute;
+width: 119px;
+height: 12px;
+left: 983px;
+top: 417px;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+text-align: right;
+color: #5F6368;
+text-decoration: none;
+}
+    
+
+#buttonlogin {
+/* Auto layout */
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 12px 64px;
+gap: 10px;
+position: absolute;
+width: 345px;
+height: 48px;
+left: 873px;
+top: 355px;
+/* Primary/ Blue 700 (Main) */
+background: #0487E2;
+border-radius: 4px;
+border: none;
+}
+
+#buttonlogin:hover{
+
+    cursor: pointer;
+    background: #0274c6;
+
+}
+#buttonlogintext {
+    /* Button */
+width: 52px;
+height: 24px;
+/* Body txt/body-M-Regular */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 132%;
+/* identical to box height, or 24px */
+text-align: center;
+/* Shades/0 */
+color: #FFFFFF;
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+.groupFooter{
+position: absolute;
+width: 1440px;
+height: 267px;
+left: 0px;
+top: 636px;
+}
+.footerSupported{
+    /* Supported by */
+
+
+position: absolute;
+width: 102.25px;
+height: 19px;
+right: 118.07px;
+bottom: 197px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+/* or 147% */
+
+text-align: right;
+
+color: #000000;
+
+}
+
+.footerDiscLogo{
+/* DISC-Logo */
+width: 76.02px;
+height: 33px;
+left: 65.36px;
+top: 687px;
+
+}
+
+.footerDisc{
+/* DISC */
+
+position: absolute;
+width: 76.02px;
+height: 33px;
+right: 1298.62px;
+bottom: 183px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 28.1449px;
+line-height: 42px;
+
+color: #3B3B3B;
+}
+
+.footerDescription {
+    
+position: absolute;
+width: 357.36px;
+height: 42px;
+right: 1017.28px;
+bottom: 119px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 21px;
+
+color: #000000;
+
+}
+
+.footerCopyright{
+    position: absolute;
+width: 392.15px;
+height: 38.49px;
+right: 118.07px;
+bottom: 58.51px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+text-align: right;
+
+color: #545454;
+
+}
+.footerLogo{
+    position: absolute;
+    left: 82.58%;
+    right: 8.2%;
+    top:30.18%;
+    bottom: 13.73%;
+
+}
+
+.footerRectangle{
+width: 1440px;
+height: 267px;
+right: 0px;
+bottom: 0px;
+
+/* Neutral/Grey 50 */
+
+background: #F6F8FC;
+}
